@@ -41,3 +41,6 @@ RUN apt-get update > /dev/null && \
     conda clean -afy && \
     echo ". ${CONDA_DIR}/etc/profile.d/conda.sh && conda activate base" >> /etc/skel/.bashrc && \
     echo ". ${CONDA_DIR}/etc/profile.d/conda.sh && conda activate base" >> ~/.bashrc
+
+RUN mamba install -c conda-forge conda-lock
+    
