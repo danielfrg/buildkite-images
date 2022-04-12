@@ -3,7 +3,7 @@ FROM buildkite/agent:3-ubuntu
 # Mambaforge
 # Taken from: https://github.com/conda-forge/miniforge-images/blob/master/ubuntu/Dockerfile
 
-ARG MINIFORGE_NAME=Miniforge3
+ARG MINIFORGE_NAME=Mambaforge
 ARG MINIFORGE_VERSION=4.12.0-0
 ARG TINI_VERSION=v0.18.0
 ARG TARGETPLATFORM
