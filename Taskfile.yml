@@ -11,4 +11,4 @@ tasks:
 
   run:
     cmds:
-      - docker run -it -e BUILDKITE_AGENT_TOKEN="{{.BUILDKITE_AGENT_TOKEN}}" ghcr.io/danielfrg/{{.image}}
+      - docker run -it -e BUILDKITE_AGENT_TOKEN="{{.BUILDKITE_AGENT_TOKEN}}" ghcr.io/danielfrg/{{.image}} --tags "queue=python"

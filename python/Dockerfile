@@ -8,4 +8,6 @@ RUN curl -L -O https://github.com/mitsuhiko/rye/releases/latest/download/rye-$AR
     && mv ./rye-${ARCH}-linux /usr/local/bin/rye \
     && rm -rf rye-${ARCH}-linux.gz
 
+RUN rye self install --yes
+
 RUN echo 'source "$HOME/.rye/env"' >> ~/.bashrc
