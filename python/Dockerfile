@@ -1,5 +1,5 @@
 FROM buildkite/agent:3-ubuntu
-ARG ARCH=aarch64
+ARG ARCH=x86_64
 
 # Install rye
 RUN curl -L -O https://github.com/mitsuhiko/rye/releases/latest/download/rye-$ARCH-linux.gz \
