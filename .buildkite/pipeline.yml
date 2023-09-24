@@ -3,14 +3,18 @@ agents:
 
 steps:
   - label: "Example Test"
-    command: echo "Hello!"
     agents:
       queue: "python"
+    command: echo "Hello!"
 
   - label: "Test rye"
+    agents:
+      queue: "python"
     command: rye --version
 
   - label: "Rye sync"
+    agents:
+      queue: "python"
     commands:
       - rye init
       - rye add pandas
