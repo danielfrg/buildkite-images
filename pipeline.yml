@@ -1,0 +1,15 @@
+agents:
+  queue: "python"
+
+steps:
+  - label: "Example Test"
+    command: echo "Hello!"
+
+  - label: "Test rye"
+    command: rye --version
+
+  - label: "Rye sync"
+    commands:
+      - rye init
+      - rye add pandas
+      - rye sync
