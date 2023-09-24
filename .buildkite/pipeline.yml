@@ -1,3 +1,6 @@
+agents:
+  queue: "python"
+
 steps:
   - label: "Example Test"
     command: echo "Hello!"
