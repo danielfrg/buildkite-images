@@ -1,6 +1,8 @@
 steps:
   - label: "Example Test"
     command: echo "Hello!"
+    agents:
+      queue: "python"
 
   - label: "Test rye"
     command: rye --version
