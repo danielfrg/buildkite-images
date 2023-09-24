@@ -1,6 +1,8 @@
 FROM buildkite/agent:3-ubuntu
 ARG ARCH=x86_64
 
+RUN apt-get update && apt-get install -y gh jq
+
 # Install rye
 RUN curl -L -O https://github.com/mitsuhiko/rye/releases/latest/download/rye-$ARCH-linux.gz \
     && gunzip rye-${ARCH}-linux.gz \
