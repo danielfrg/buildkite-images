@@ -4,10 +4,8 @@ Docker images for buildkite
 
 ## Python
 
-Buildkite Agent (Ubuntu) + Mambaforge
-
-Available on [DockerHub danielfrg/buildkite-python](https://hub.docker.com/repository/docker/danielfrg/buildkite-python).
+Buildkite Agent (Ubuntu) + Rye + Python 3.9
 
 ```shell
-docker push danielfrg/buildkite-python:latest
+docker pull ghcr.io/danielfrg/buildkite-images-python:main
 ```
