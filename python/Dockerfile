@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     gh \
     gnupg \
     jq \
+    less \
     unzip
 
 # Install awscli
