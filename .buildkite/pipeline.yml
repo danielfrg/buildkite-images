@@ -7,6 +7,11 @@ steps:
       queue: "python"
     command: echo "Hello!"
 
+  - label: "Test aws cli"
+    agents:
+      queue: "python"
+    command: aws --version
+
   - label: "Test rye"
     agents:
       queue: "python"
